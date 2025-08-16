@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Font Awesome Test</title>
+
+  <!-- ✅ Step 1: Include Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .contact a {
+      font-size: 40px;       /* icon size */
+      margin: 0 15px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Hover effects */
+    .contact a.linkedin:hover { color: #0077b5; }  /* LinkedIn Blue */
+    .contact a.telegram:hover { color: #0088cc; }  /* Telegram Blue */
+  </style>
+</head>
+<body>
+  <h2>Contact Me</h2>
+  
+  <!-- ✅ Step 2: Use Font Awesome icons -->
+  <div class="contact">
+    <a class="linkedin" href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a class="telegram" href="https://t.me/YOUR_USERNAME" target="_blank">
+      <i class="fa-brands fa-telegram"></i>
+    </a>
+  </div>
+</body>
+</html>
