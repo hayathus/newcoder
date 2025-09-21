@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    background-image: url(./hayat.jpg);
+}
+.list{
+  background-color: lightblue;
+    width:90% ;
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+header h1{
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+a:hover{
+background: blue;
+color: white;
+}
+.add-task{
+    text-align: center;
+    margin: 15px 0;
+}
+.some-task{
+    text-align: center;
+    margin: 10px 0;
+}
+button{
+    background-color: lightslategray;
+    border-radius: 15px;
+    padding: 6px 10px;
+}
+footer{
+    text-align: center;
+   background-color: white;
+ font-size: 25px;
+
+}
