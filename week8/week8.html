@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="container">
+<h2>My Tasks</h2>
+
+<input id="taskInput" placeholder="Enter a task">
+<button onclick="addTask()"> Add</button>
+
+<p id="taskList"> </p>
+</div>
+<style>
+    body {
+       background-color: bisque;
+       margin: 0;
+       padding: 0;
+    }
+    .container{
+        background-color: white;
+        margin: 10% 40%;
+        padding: 10px;
+    }
+    button{
+        color: white;
+        background-color: blue;
+    }
+</style>
+
+<script>
+let tasks = [];
+
+function addTask() {
+  // get the input value
+  let task = document.getElementById("taskInput").value;
+
+  // only add if input is not empty
+  if (task !== "") {
+    tasks.push(task); // add task to array
+
+    // clear the input
+    document.getElementById("taskInput").value = "";
+
+    // show all  added tasks
+    let text = "";
+    for (let i = 0; i < tasks.length; i++) {
+      text += (i + 1) + " " + tasks[i] + "<br>";
+    }
+    document.getElementById("taskList").innerHTML = text;
+  }
+}
+</script>
+
+</body>
+</html>
